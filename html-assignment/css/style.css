@@ -1,0 +1,49 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+h1, 
+h2, 
+footer {
+    background-color: turquoise;
+}
+
+.site-title {
+    color: rgb(27, 88, 82);
+}
+
+#my-image {
+    box-shadow: 0px 0px 2px 1px black;
+}
+
+#hobbies ul {
+    list-style: square;
+}
+
+#hobbies ul li:nth-child(odd) {
+    background-color: cornflowerblue;
+}
+
+nav ul li,
+nav ul li a:link {
+    list-style: none;
+    text-decoration: none;
+    background-color: skyblue;
+}
+
+nav ul {
+    border: 2px solid darkslateblue;
+    padding-left: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hobbies:hover,
+.my-notes:hover,
+.home:hover,
+.top:hover {
+    background-color: lavender;
+}

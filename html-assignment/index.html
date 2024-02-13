@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
    
     <header>
-        <h1>Jun Yoshida</h1>
-        <a href="#hobbies">My Hobbies</a>
+        <h1 class="site-title">Jun Yoshida</h1>
+        <a class="hobbies" href="#hobbies">My Hobbies</a>
+        <a class="top"></a>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="note.html">My Notes</a></li>
+                <li><a class="home" href="index.html">Home</a></li>
+                <li><a class="my-notes" href="note.html">My Notes</a></li>
             </ul>
         </nav>
     </header>
@@ -22,7 +24,7 @@
         <article>
             <h2><strong>About Me</strong></h2>
 
-            <img title="Photo of me in Gero, Japan" src="/html-assignment/images/gero-desu.jpg" alt="Photo of me in Gero, Japan" width="500">
+            <img id="my-image" title="Photo of me in Gero, Japan" src="/html-assignment/images/gero-desu.jpg" alt="Photo of me in Gero, Japan" width="500">
 
             <p>My name is Jun Yoshida. I was born and raised in Ottawa, <abbr title="Ontario">ON</abbr>. My birthday is on April 23<sup>rd</sup>. My dad is Japanese and my mom is Thai. I've visited both countries multiple times and recently went to Japan in November 2020. I have one sibling, an older brother that's 2 years older than me. I also own two cats named Kiki and Mika. Some of my hobbies include playing guitar, playing games, watching anime, lifting weights, eating good food, and hanging out with my friends. The hobby I enjoy the most out of all of them is playing guitar. Playing guitar helps me relax, but also keeps my mind active and challenges me when I learn new songs. There are some other hobbies that I want to pick up, such as learning how to play the piano, drawing, reading, creating/coding a game and cooking.</p>
            
@@ -41,9 +43,12 @@
                 <li>Food</li>
                 <li>Going Out</li>
             </ul>
-        </section>    
+        </section>   
+
+        <a class="top" href="#top">Back to top of page</a>
 
         </article>
+
     </main>
 
     <!-- Footer is not part of the main, to get copyright logo, type &copy; -->
