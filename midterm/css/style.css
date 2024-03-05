@@ -1,0 +1,245 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* My CSS Stylesheet */
+
+
+html {
+
+	/* setting the html background color */
+    background-color:#AAD4CF ; 
+	height: 1604px; 
+	
+}
+
+body {
+
+	/* properties for the body to match original webpage */
+	background-color: #D4E9E7;
+	font-family: Arial, sans-serif;
+	font-weight: 500;
+	width: 1024px;
+    height: 1588px;
+	margin: auto;
+
+}
+
+.title {
+
+	/* absolute positioning the h1 class title over the img tag while changing the font size and color to match the original*/
+	font-size: 64px;
+	color: white;
+	position: absolute;
+	top: 22%;
+	left: 40.10%;
+
+}
+
+
+nav li {
+
+	/* setting the display as inline block so that they're lined up horizontally at an equal distance*/
+	display: inline-block;
+	width: 300px;
+	height: auto;
+
+}
+
+nav a {
+
+	/* setting display as block and added padding  */
+	display: block;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 26px;
+	color: black;	
+	padding: 9.5px;
+	
+
+}
+
+.story, .contact {
+
+	/* Minor and specific adjustments */
+	border-left: 1px solid black;
+	text-align: center;
+
+}
+
+.home {
+
+	margin-left: 40%;
+
+}
+
+.story {
+
+	padding-left: 90px;
+	margin-left: 36px;
+
+}
+
+.contact {
+
+	padding-left: 110px;
+	margin-left: 74px;
+
+
+}
+
+
+
+ article h2 {
+
+	/* trying to match font size of h2 to original */
+	font-size: 35px;
+	margin: 35px 0 10px 10px; 
+
+}
+
+.lone-starfish {
+
+	/* using float to position the starfish photo on the left */
+	float: left;
+	width: 250px;
+	margin: 8px 20px 30px 10px;
+
+}
+
+.p-container {
+
+	/* adjusting line height/leading and setting margins */
+	line-height: 1.40;
+	margin: 20px 20px 10px 10px;
+	
+
+} 
+
+section h3 {
+
+	font-size: 29px;
+	margin: 0 0 15px 10px ;
+
+}
+
+section ul {
+
+	/* using list style type disc and coloring it black */
+	list-style-type: disc;
+	color: black;
+	margin: 10px 0 28px 28px;
+
+}
+
+form {
+
+	/* form measurements to match original */
+	border: 1px solid black;
+	font-size: 19px;
+	height: 449px;
+	margin: 0 10px;
+	padding: 30px 15px 0 15px;
+	line-height: 2;
+
+}
+
+
+#name, #email {
+
+	/* sizing the name and email text box input */
+	border: 1px solid lightgrey;
+	width: 965px;
+	height: 25px;
+
+}
+
+
+#message {
+
+	border: 1px solid grey;
+	width: 965px;
+	height: 95px;
+	margin-bottom: 10px;
+
+}
+
+.select {
+
+	margin-top: 10px;
+
+}
+
+.choice {
+
+	font-size: 22px;
+
+}
+
+.send-button {
+
+	/* styling the send button to match original */
+	border: 1px solid black;
+	text-transform: uppercase;
+	font-size: 11px;
+	background-color: #D4E9E7;
+	padding: 12px 11px;
+	margin: 4px 0 0 1px;
+	
+}
+
+.footer-class {
+
+	/* positioning the footer to match original */
+	text-align: right;
+	margin: 35px;
+	margin-right: 33px;
+
+}
