@@ -1,0 +1,589 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ------------------------
+      	My CSS Style 
+   ------------------------ */
+
+/* -------- GENERAL (HEADINGS, FONT, IMG, ETC) 
+one thing I've noticed throughout this whole code is that I have too many containers or just added many unnecessary things which made it harder to code my CSS -------------- */
+
+/* ALSO MOBILE MOCK UP LOOKS OK, DIDN'T LEAVE ENOUGH TIME FOR MYSELF TO FIX HTML CODE TO MAKE CSS EASIER */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+p {
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+h1 {
+	font-size: 77px;
+	font-weight: bold;
+	color: white;
+	line-height: 1.6;
+	margin: 15px 0;
+}
+
+h2 {
+	font-size: 51px;
+	font-weight: bold;
+	margin: 15px 0;
+}
+
+h3 {
+	font-size: 34px;
+	font-weight: bold;
+	
+}
+
+h4 {
+	font-size: 17px;
+	font-weight: bold;
+}
+
+img {
+	width: 100%;
+}
+
+/* ---------- HEADER (INCLUDES NAV AND SEARCH) -------------- */
+
+.header-container {
+	background-color: #222;
+	padding: 15px 15px;
+}
+
+.logo-container {
+	background-color:#c78c06;
+	padding: 20px 0 15px 0;
+}
+
+.logo {
+	height: 105px;
+	width: 108px;
+}
+
+.nav-container {
+	font-size: 19px;
+	line-height: 1em;
+}
+
+
+.home {
+	background-color: #c78c06;
+}
+
+nav a {
+	display: flex;
+	justify-content: center;
+	padding: 25px;
+}
+
+.home {
+	text-decoration: none;
+	color:#222;
+}
+
+.about-us, .services, .team, .contact {
+	text-decoration: none;
+	color: #c78c06;
+
+}
+
+#search {
+	flex: auto;
+	height: 45px;
+	padding: 13px 0px 13px 5px ;
+	font-size: 18px;
+	
+}
+
+.search-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.search-button {
+	background-color: #222;
+	border: 1px solid #c78c06;
+	color: #c78c06;
+	font-size: 25px;
+	padding: 5px 7px 10px ;
+	height: 45px;
+}
+
+/* --------------- MAIN BANNER 
+really messy, trying things out and ran out of time to change it ----------------- */
+
+.welcome-container {
+	background-image:url(../images/main-banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 50px 0;
+}
+
+.banner-container {
+	background-color: rgba(34, 34, 34, 0.8);
+	padding: 15px;
+	margin: 25px 0;
+	
+}
+
+.banner-p {
+	color: white;
+	margin: 0 20px 0 0;
+}
+
+.connect-btn {
+	border: none;
+	background-color: #c78c06;
+	padding: 35px;
+	font-size: 23px;
+	margin-top: 15px;
+}
+
+.btn-icon {
+	margin-left: 10px;
+	font-size: 25px;
+}
+
+/* --------- ABOUT US SECTION (INCLUDES AN IMG AND HEADING + PARAGRAPH -------------- */
+
+.about-us-container {
+	background-color: #ffe6ac;
+	padding: 15px;
+}
+
+/* ----------- OUR SEVICES ------------ */
+/* LOOKS FINE IN MOBILE, BUT BUTTONS NEEDED TO BE CENTERED AND FILLED OUT THE CONTAINER */
+
+
+.services-container {
+	max-width: 1200px;
+	margin: 16px;
+	display: grid;
+	gap: 15px;
+}
+
+/* -------------- COULD HAVE BEEN MORE EFFICIENT WITH THIS ------------------- */
+
+.digital-plan, .marketing-plan, .video-plans, .web-plans, .print-plans {
+	background-color: #ffe6ac;
+}
+
+.digital-content, .marketing-content, .video-content, .web-content, .print-content {
+	padding: 15px;
+}
+
+
+.services-btn {
+	border: none;
+	background-color: #222;
+	font-size: 24px;
+	color: white;
+	padding: 35px 33px;
+}
+
+/* -------- OUR VISION ---------- */
+/* LOTS TO IMPROVE HERE, SHOULD HAVE TRIED MORE THINGS */
+
+.vision-container {
+	background-image: url(../images/vision.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: white;
+	padding: 30px 15px 15px;
+	
+}
+
+.learn-more-btn {
+	border: 1px solid #c78c06;
+	background-color: #11253d;
+	font-size: 24px;
+	color: white;
+	padding: 35px 33px;
+}
+
+/* ------------- OUR TEAM ---------------- */
+/* COULD HAVE BEEN BETTER AT THE FINER DETAILS INSIDE THE CONTAINER, ALSO COULD HAVE BEEN MORE EFFICIENT */
+
+.our-team {
+	display: grid;
+	gap: 15px;
+}
+
+.john-container, .bob-container {
+	background-color: #ffe6ac;
+	margin: 0 15px;
+}
+
+.john-content, .bob-content {
+	padding: 15px 15px 30px 15px;
+
+}
+
+.team-names {
+	padding: 10px;
+}
+
+.position-container {
+	border-bottom: 2px solid #c78c06;
+	padding: 5px 0;
+	margin: 0 15px;
+}
+
+/* ------------ CONTACT US (INCLUDES A CONTAINER FOR THE FORM, MAP AND SCHEDULE) -------------- */
+/* DOING THIS PART MADE ME REALIZE THAT THERE WERE BETTER WAYS OF APPROACHING THIS. I JUST DIDN'T GIVE MYSELF ENOUGH TIME TO BE ABLE TO WORK ON IT */
+
+.contact-us {
+	padding: 15px;
+	margin-top: 25px;
+}
+
+.form-container {
+	padding-right: 10px;
+}
+
+#name, #email {
+	height: 25px;
+	width: 100%;
+	margin: 10px 0;
+}
+
+#message {
+	width: 100%;
+	height: 160px;
+	margin: 10px 0;
+}
+
+.send-button {
+	border: none;
+	background-color: #222;
+	color: #c78c06;
+	font-size: 23px;
+}
+
+/* ----------------- SCHEDULE -------------------- */
+/* USED NTH-CHILD TO TARGET CERTAIN CELLS AND DELETE BORDERS SO THAT THEY WOULDN'T OVERLAP AND APPEAR THICKER. I FEEL LIKE THERE COULD HAVE BEEN A BETTER WAY */
+
+.hours-content {	
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+	border: 1px solid black;
+	margin: 15px 0;
+	
+}
+
+.hours-op {
+	margin: 15px;
+	padding: 15px;
+}
+
+.item:nth-child(1), 
+.item:nth-child(2) {
+	text-align: center;
+	background-color: #ffe6ac;
+}
+
+
+.item {
+	padding: 15px;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.item:nth-child(2n) {
+	border-right: none;
+}
+
+.item:nth-last-child(-n+2) {
+	border-bottom: none;
+}
+
+
+/* ------------ MAP -------------- */
+/* TARGETING THE IFRAME TAKEN FROM GOOGLE MAPS */
+
+.map-container {
+	padding: 15px;
+}
+
+.map-container .map iframe {
+	margin-top: 15px;
+	width: 100%;
+	height: 450px;
+}
+
+/* ------------- FOOTER ------------ */
+/* NOTHING FANCY, JUST THE FOOTER */
+
+.footer-container {
+	background: #222;
+	color: #c78c06;
+	padding: 20px;
+	
+}
+
+.footer-link {
+	color: #c78c06; 
+}
+
+
+/* ------------------------------------- 
+			Desktop Styling/Layout
+------------------------------------- */
+/* THIS IS WHERE I REALIZED THAT I SHOULD HAVE SPENT MORE TIME ON THIS */
+
+
+/* -------- MEDIA QUERY BREAKING POINT ----------- */
+/* CHANGING FONT SIZES */
+@media screen and (min-width: 760px) {
+
+	p {
+		font-size: 15px;
+	}
+	
+	h1 {
+		font-size: 82px;
+	}
+	
+	h2 {
+		font-size: 51px;
+	}
+	
+	h3 {
+		font-size: 34px;
+		
+	}
+	
+	h4 {
+		font-size: 17px;
+	}
+
+/* THIS IS WHERE I REALIZED THAT MY HTML CODE WAS BAD AND I MADE IT EXTREMELY DIFFICULT FOR MYSELF */
+/* USING A MIX OF FLEX AND GRID LATER ON. ALSO I SHOULD HAVE MADE LESS CONTAINERS AND SHOULD HAVE MADE MORE GLOBAL ELEMENTS/TAGS */
+
+/* ------------ HEADER ---------------- */
+	.header-container .logo-container {
+		background-color: transparent;
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	nav ul {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	#search {
+		display: flex;
+		justify-content: end;
+	}
+
+	.welcome-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.banner-container {
+		max-width: 1200px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		
+	}
+
+/* ------------ ABOUT US ------------------ */
+
+	#about-us {
+		background-color: #ffe6ac;
+		display: flex;
+		justify-content: center;
+
+	}
+
+	.about-us-container {
+		max-width: 1200px;
+	}
+
+/* CUTTING DOWN THE SIZE OF THE IMG BY 50% */
+
+	.about-us-img {
+		width: 50%;
+	}
+
+
+/* ----------------- OUT SERVICES --------------- */
+/* I WISH I LEFT MORE TIME TO FIX MY HTML CODE HERE */
+
+/* USING GRID 6 COLUMNS AND 2 ROWS (THANK YOU FOR THE TIP) BUT WAS A BIT OF A CHALLENGE MAKING IT WORK */
+	#our-services {
+		display: grid;
+		max-width: 1200px;
+		margin: 0 auto;
+		
+	}
+	.services-container {
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+
+	}
+
+	.digital-plan {
+		grid-column-start: 1;
+		grid-column-end: 4;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+
+	.marketing-plan {
+		grid-column-start: 4;
+		grid-column-end: 7;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+
+	.video-plans {
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 2;
+		grid-row-end: 2;
+	}
+
+	.web-plans {
+		grid-column-start: 3;
+		grid-column-end: 5;
+		grid-row-start: 2;
+		grid-row-end: 2;
+	}
+
+	.print-plans {
+		grid-column-start: 5;
+		grid-column-end: 7;
+		grid-row-start: 2;
+		grid-row-end: 2;
+	}
+
+/* ----------- OUR VISION -------------- */
+/* JUST SETTING THE MAX WIDTH AND MARGIN */
+
+	.vision-content {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+/* ------------- OUR TEAM ----------------- */
+/* STUPID MISTAKES */
+
+	.our-team {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.john-container {
+		display: flex;
+	}
+
+	.bob-container {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+/* ------------- CONTACT US -------------- */
+/* USING GRID RATHER THAN FLEX BECAUSE FLEX WASN'T WORKING AS WELL BECAUSE OF MY HTML */
+
+	#contact-us {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr)
+
+	}
+	
+	.contact-us {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+
+	.map-container {
+		grid-column-start: 2;
+		grid-column-end: 4;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+
+	.hours-container {
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 2;
+		grid-row-end: 3;
+	}
+
+/* --------- FOOTER ----------- */
+/* NOTHING CRAZY */
+
+	.footer-content {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+}
+
